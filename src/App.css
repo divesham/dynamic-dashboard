@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.ag-theme-alpine {
+  margin-top: 20px;
+}
+
+/* Tabs container */
+.tabs-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+  overflow-x: auto; /* For horizontal scrolling if there are many tabs */
+}
+
+/* Individual tab */
+.tab {
+  display: flex;
+  align-items: center;
+}
+
+/* Tab button styles */
+.tab-button {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+/* Delete button styles */
+.delete-button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.delete-button:hover {
+  color: darkred;
+}
